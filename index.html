@@ -694,7 +694,32 @@ for (i = 0; i < coll.length; i++) {
 	position:relative;
 	top:1px;
 }
-</style>			   
+</style>
+			   
+<style>
+.loader {
+  border: 16px solid #4f4f4f;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 9s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+			   
+<div class="loader"></div>
+<!--THATS WHERE EPICNESS BEGINS!-->
 
 </body>
 </html> 
